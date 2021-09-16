@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}FakeCSV{% endblock title %}
+
+{% block content %}
+    <div class="row align-items-center justify-content-center mt-5" style="height: 70vh">
+        <div class="col-lg-8 text-center">
+            <h1>Welcome to FakeCSV Project!</h1>
+            <h4 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
+                autem cum dignissimos dolor ducimus exercitationem id illo iste libero maiores molestias, officia porro
+                sapiente, sint tempora totam! Dolorum, fuga?
+            </h4>
+            <a role="button" class="btn btn-primary btn-lg" href="{% url 'schema-create' %}">Create your schema now</a>
+        </div>
+    </div>
+{% endblock content %}
