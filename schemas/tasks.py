@@ -37,7 +37,7 @@ def generate_csv_file(
             writer.writerow(row)
 
     dataset = Dataset.objects.get(pk=dataset_id)
-    with open(filename) as file:
+    with open(filename, "rb") as file:
         dataset.csv_file = File(file)
         dataset.status = Dataset.READY
         dataset.save()
